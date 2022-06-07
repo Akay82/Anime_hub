@@ -1,0 +1,547 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient(to top, #0f3a09 0%, #36092a 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+    font-size: 240%;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.row {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.style-1 {
+    text-align: center;
+    float: left;
+    margin-top: 40px;
+    margin-left: -80px;
+}
+
+.bbb {
+    color: #999;
+    background: rgba(0, 0, 0);
+    padding: 10px 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.bbb:hover {
+    border: none;
+    background: rgba(0, 0, 0, 0.4);
+    background: #fff;
+    padding: 20px 20px #000;
+    color: #1b1b1b;
+}
+
+.main-content-header {
+    width: 1180px;
+    position: absolute;
+    top: 75%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2;
+}
+
+.btn-full {
+    background-color: transparent;
+    color: purple;
+    margin-right: 15;
+    border: 1px solid purple;
+}
+
+.btn-full:hover {
+    background-color: white;
+}
+
+.tn-full {
+    background-color: transparent;
+    margin-left: 15px;
+    color: white;
+    border: 1px solid white;
+}
+
+.tn-full:hover {
+    background-color: purple;
+}
+
+.colorchange {
+    animation: changeajay 1.5s infinite;
+}
+
+@keyframes changeajay {
+    0% {
+        color: red;
+    }
+    25% {
+        color: purple;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: purple;
+    }
+}
+
+@media only screen and(max-width: 1180px) {
+    .main-content-header {
+        width: 100%;
+        padding: 0.2%;
+    }
+}
+
+form {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    ;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover,
+form:valid {
+    width: 200px;
+    cursor: pointer;
+}
+
+form:hover input,
+form:valid input {
+    display: block;
+}
+
+form:hover .fa,
+form:valid .fa {
+    background: #07051a;
+    color: white;
+}
+
+
+/* sharingan css*/
+
+.itachi {
+    position: absolute;
+    width: 90%;
+    padding: 40px;
+}
+
+
+/*base elements*/
+
+#eye {
+    position: absolute;
+    top: 24%;
+    left: 35%;
+    background-color: white;
+    height: 200px;
+    width: 300px;
+    border-radius: 65% 0;
+    /*  transform: skew(-5deg);*/
+    border-top: solid black 15px;
+    border-left: solid black 5px;
+    border-right: solid black 7px;
+    border-bottom: solid black 2px;
+    border-bottom-left-radius: 5%;
+    border-top-right-radius: 1%;
+}
+
+#sharingan {
+    background-color: firebrick;
+    border-radius: 50%;
+    border: solid black;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 9%;
+    left: 25%;
+    animation: sharingans 1.5s linear infinite;
+}
+
+#black-outline {
+    margin-top: 14%;
+    margin-left: 14%;
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border: solid black;
+    border-radius: 50%;
+}
+
+.tomoe-circle-1 {
+    position: absolute;
+    margin-top: 15%;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.triangle-1 {
+    height: 18px;
+    width: 10px;
+    background-color: black;
+    position: relative;
+    top: -9px;
+    left: 4px;
+    border-radius: 0% 145% 0% 90%;
+    transform: rotateZ(60deg) skewY(30deg);
+}
+
+.tomoe-circle-2 {
+    position: absolute;
+    margin-top: 25%;
+    right: -3%;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+    transform: rotate(60deg);
+}
+
+.triangle-2 {
+    height: 18px;
+    width: 10px;
+    background-color: black;
+    position: relative;
+    top: -9px;
+    left: 4px;
+    border-radius: 0% 145% 0% 90%;
+    transform: rotateZ(60deg) skewY(30deg);
+}
+
+.tomoe-circle-3 {
+    position: absolute;
+    margin-top: 90%;
+    right: 45%;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+    transform: rotate(160deg);
+}
+
+.triangle-3 {
+    height: 18px;
+    width: 10px;
+    background-color: black;
+    position: relative;
+    top: -9px;
+    left: 4px;
+    border-radius: 0% 145% 0% 90%;
+    transform: rotateZ(60deg) skewY(30deg);
+}
+
+.pupil {
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    left: 35%;
+    top: 35%;
+    box-shadow: 0px 0px 70px black;
+}
+
+
+/*keyframe animation*/
+
+@keyframes sharingans {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* second eye*/
+
+.second_eye {
+    position: absolute;
+    width: 90%;
+    padding: 40px;
+}
+
+
+/*base elements*/
+
+#eye2 {
+    position: absolute;
+    top: -650%;
+    left: 10%;
+    background-color: white;
+    height: 200px;
+    width: 300px;
+    border-radius: 65%;
+    /*  transform: skew(-5deg);*/
+    border-top: solid black 15px;
+    border-left: solid black 7px;
+    border-right: solid black 5px;
+    border-bottom: solid black 2px;
+    border-top-left-radius: 1%;
+    border-bottom-right-radius: 5%;
+}
+
+#rinnengan {
+    background-color: #8176a7;
+    border-radius: 50%;
+    border: solid black;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 9%;
+    left: 25%;
+    animation: rinnengan 1.5s linear infinite;
+}
+
+#blackoutline {
+    margin-top: 14%;
+    margin-left: 14%;
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    border: solid black;
+    border-radius: 50%;
+}
+
+#blackoutline2 {
+    margin-top: 14%;
+    margin-left: 14%;
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border: solid black;
+    border-radius: 50%;
+}
+
+.tmcircle1 {
+    position: absolute;
+    margin-top: 15%;
+    height: 8px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.triangle1 {
+    height: 12px;
+    width: 7px;
+    background-color: black;
+    position: relative;
+    top: -9px;
+    left: 4px;
+    border-radius: 0% 145% 0% 90%;
+    transform: rotateZ(60deg) skewY(30deg);
+}
+
+.tmcircle2 {
+    position: absolute;
+    margin-top: 25%;
+    right: -3%;
+    height: 8px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+    transform: rotate(60deg);
+}
+
+.triangle2 {
+    height: 12px;
+    width: 7px;
+    background-color: black;
+    position: relative;
+    top: -9px;
+    left: 4px;
+    border-radius: 0% 145% 0% 90%;
+    transform: rotateZ(60deg) skewY(30deg);
+}
+
+.tmcircle3 {
+    position: absolute;
+    margin-top: 90%;
+    right: 45%;
+    height: 8px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+    transform: rotate(160deg);
+}
+
+.triangle3 {
+    height: 12px;
+    width: 7px;
+    background-color: black;
+    position: relative;
+    top: -9px;
+    left: 4px;
+    border-radius: 0% 145% 0% 90%;
+    transform: rotateZ(60deg) skewY(30deg);
+}
+
+.tmcircle4 {
+    position: absolute;
+    margin-top: 60%;
+    margin-left: -35%;
+    height: 8px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.triangle4 {
+    height: 12px;
+    width: 7px;
+    background-color: black;
+    position: relative;
+    top: -8px;
+    left: 4px;
+    border-radius: 0% 145% 0% 90%;
+    transform: rotateZ(60deg) skewY(30deg);
+}
+
+.tmcircle5 {
+    position: absolute;
+    margin-top: -35%;
+    right: 35%;
+    height: 8px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+    transform: rotate(30deg);
+}
+
+.triangle5 {
+    height: 12px;
+    width: 7px;
+    background-color: black;
+    position: relative;
+    top: -9px;
+    left: 4px;
+    border-radius: 0% 145% 0% 90%;
+    transform: rotateZ(60deg) skewY(30deg);
+}
+
+.tmcircle6 {
+    position: absolute;
+    margin-top: 80%;
+    right: -30%;
+    height: 8px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+    transform: rotate(160deg);
+}
+
+.triangle6 {
+    height: 12px;
+    width: 7px;
+    background-color: black;
+    position: relative;
+    top: -9px;
+    left: 4px;
+    border-radius: 0% 145% 0% 90%;
+    transform: rotateZ(60deg) skewY(30deg);
+}
+
+.pup {
+    background-color: black;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: relative;
+    left: 35%;
+    top: 35%;
+    box-shadow: 0px 0px 70px black;
+}
+
+
+/*keyframe animation*/
+
+@keyframes rinnengan {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 576px) {
+     :root {
+        --size-divisor: 2;
+    }
+}
+
+@media (min-width: 768px) {
+     :root {
+        --size-divisor: 1.5;
+    }
+}
+
+@media (min-width: 992px) {
+     :root {
+        --size-divisor: 1;
+    }
+}
+
+@media (min-width: 1200px) {
+     :root {
+        --size-divisor: .67;
+    }
+}

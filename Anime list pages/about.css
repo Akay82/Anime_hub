@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+
+.colorchange {
+    animation: changeajay 1.5s infinite;
+}
+
+@keyframes changeajay {
+    0% {
+        color: red;
+    }
+    25% {
+        color: purple;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: purple;
+    }
+}
